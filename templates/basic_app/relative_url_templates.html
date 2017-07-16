@@ -1,0 +1,29 @@
+<!doctype html>
+{% extends 'basic_app/base.html' %}
+
+	{% block body_block %}
+		<h1>Welcome to Relative URL Templates!</h1>
+		<a href="{% url 'basic_app:other' %}"><h2>The Other Page</h2></a>
+	{% endblock %}
+
+<!-- <!doctype html>
+<html>
+	<head>
+		<title>HOME</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Welcome to Relative URL Templates!</h1>
+
+				<a href="{% url 'basic_app:other' %}"><h2>The Other Page</h2></a>
+				<a href="{% url 'admin:index' %}"><h2>The Admin Page</h2></a>
+				<a href="{% url 'index' %}">Link to Index</a>
+
+			</div>
+		</div>
+
+	</body>
+</html> -->
